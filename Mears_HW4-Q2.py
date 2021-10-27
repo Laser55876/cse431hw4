@@ -13,7 +13,7 @@ def insertionSort(arr):
                 j -= 1
         arr[j+1] = key
 
-def timSort(arr, ck=60):
+def timSort(arr, ck=60): # ck is the constant k as described in the question
     if len(arr) > 1:
         mid = len(arr)//2 # Finding the mid of the array
         L = arr[:mid] # Dividing the array elements
