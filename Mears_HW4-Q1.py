@@ -60,7 +60,7 @@ def getSortTimes(N):
     total = time.time() - start
     if (not total):
         total = avgShortRunTimes(arr, True)
-    print(f"Total Time for Merge Sort of {N} values: {total}")
+    print(f"Total Time for Merge Sort of {N} values: {total}")    
     start = time.time()
     insertionSort(arr2)
     total = time.time() - start
@@ -69,7 +69,7 @@ def getSortTimes(N):
     print(f"Total Time for Insertion Sort of {N} values: {total}\n")
     
 def main():
-    [getSortTimes(N) for N in range(10, 201, 10)]
-    
+    [getSortTimes(N) for N in range(10, 301, 10)]
+
 if __name__ == "__main__":
 	main()
