@@ -45,10 +45,13 @@ def timSort(arr):
     pass
 
 def getSortTimes(N):
+    arr = [v for v in range(N)]
+    random.shuffle(arr)
+    # Tim Sort
     pass
     
 def main():
-    pass
+    [getSortTimes(N) for N in range(10, 351, 10)]
 
 if __name__ == "__main__":
 	main()

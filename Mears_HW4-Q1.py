@@ -55,12 +55,14 @@ def getSortTimes(N):
     arr = [v for v in range(N)]
     random.shuffle(arr)
     arr1, arr2 = arr[:], arr[:]
+    # Merge Sort
     start = time.time()
     mergeSort(arr1)
     total = time.time() - start
     if (not total):
         total = avgShortRunTimes(arr, True)
     print(f"Total Time for Merge Sort of {N} values: {total}")    
+    # Insertion Sort
     start = time.time()
     insertionSort(arr2)
     total = time.time() - start
